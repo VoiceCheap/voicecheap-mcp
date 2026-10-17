@@ -37,4 +37,4 @@ Published by VOICECHEAP, SAS, France.
 
 ## License
 
-Client configuration, documentation and skills are distributed under the MIT license. No trademark rights to the VoiceCheap name or logo are granted. The hosted VoiceCheap service remains subject to its own terms.
+Client configuration, documentation and skills are distributed under the MIT license. No trademark rights to the VoiceCheap name or logo are granted. The hosted VoiceCheap service remains subject to its own terms. The separate ClawHub skill release is offered under that platform’s required MIT-0 license.
