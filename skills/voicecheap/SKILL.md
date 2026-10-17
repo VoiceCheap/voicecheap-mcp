@@ -1,6 +1,6 @@
 ---
 name: voicecheap
-description: Use when the user asks to manage their VoiceCheap projects, translate or dub their media, export transcripts or subtitles, or generate speech with their VoiceCheap account.
+description: Use when the user asks to connect to or work with their VoiceCheap account for audio/video or YouTube transcription, subtitles and chapters, speech and permitted voice creation, images and thumbnails, dubbing and lip sync, or authorized publishing and workspace actions.
 ---
 
 # VoiceCheap workflows
@@ -15,3 +15,8 @@ If the server is unavailable, use the client's supported connection flow for
 Do not read local credential files or ask for secrets in chat. Preserve other
 connections. Verify the connection with an authorized read before reporting
 success. Report missing access neutrally without initiating checkout.
+
+Keep private account details, project identifiers, media links and credentials
+out of public listings and demonstrations. Use synthetic review content and
+only the permissions needed for that review. Never publish media or clone a
+voice without the user's specific authorization and the speaker's permission.

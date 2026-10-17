@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.VoiceCheap/voicecheap",
   "title": "VoiceCheap",
-  "description": "Manage VoiceCheap video translation, dubbing, transcripts, subtitles and speech with your account.",
-  "version": "0.1.0",
+  "description": "Transcribe, subtitle, dub and lip-sync media; create speech, voices, images and thumbnails.",
+  "version": "0.1.1",
   "websiteUrl": "https://www.voicecheap.ai/docs/ai/model-context-protocol",
   "remotes": [
     {

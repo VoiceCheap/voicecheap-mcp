@@ -1,14 +1,49 @@
 # VoiceCheap MCP
 
-Connect your AI agent to VoiceCheap for video translation, dubbing, transcripts, subtitles and speech. This repository contains client configuration, a workflow skill and VoiceCheap branding.
+Connect an agent to your VoiceCheap account for audio, video, voice and visual
+workflows. Available tools depend on the permissions you grant and your account
+access.
+
+- Transcribe audio or video and retrieve or generate YouTube transcripts and
+  timestamped chapters.
+- Create SRT subtitles, translate SRT/VTT while preserving timing, export saved
+  subtitles, and burn subtitles into uploaded or YouTube videos.
+- Generate speech, design voices, and clone voices with explicit speaker permission.
+- Generate images and thumbnails, then retrieve your saved results.
+- Translate and dub projects, generate lip sync, and add dynamic subtitles to
+  completed translated or lip-synced videos.
+- Manage permitted publishing to connected channels, account usage and settings,
+  team access, glossaries, workspace folders and supported webhook settings.
+
+This is a client configuration package. Each marketplace manages its own review
+and indexing. Package validation does not establish that the current production
+deployment contains the same code as this checkout, or that a provider connection
+has been tested.
 
 ## Connection
 
-Remote endpoint: `https://api.voicecheap.ai/mcp` (Streamable HTTP). Sign in through VoiceCheap OAuth and begin with Read Only permissions. Grant additional permissions only for workflows you request. Do not paste tokens, passwords or API keys into a chat or this repository.
+The package connects to `https://api.voicecheap.ai/mcp` using Streamable HTTP.
+Authentication happens through VoiceCheap's browser-based OAuth consent flow.
+For a basic connection check, approve only `account:read`. Add only the read or
+write permissions needed for a requested workflow; a Read Only preset may also
+expose project and media data. Never paste passwords, API keys, authorization
+codes or tokens into the conversation or this package.
 
-First prompt: “Show my VoiceCheap credits and list my five most recent projects.”
+A VoiceCheap account with API and MCP access is required. API/MCP calls share
+the account's allowance; generation uses the applicable existing credits and
+allowances. The package does not initiate purchases or manage card payments.
 
-API/MCP access requires a VoiceCheap plan with API access. Media generation uses existing account credits. Subscriptions and credit purchases take place on the VoiceCheap website.
+First ask: "Show my VoiceCheap credits and the tools available to this connection."
+Check the actual tool response before treating the connection as working.
+Generating media, changing account data and publishing media require a user
+request that authorizes those actions. Voice cloning also requires explicit
+permission from the speaker.
+
+Keep account data and media private. Public listings, examples and demo recordings
+must not disclose account or project identifiers, credentials or media links.
+Use synthetic content for reviews and grant only the permissions each review
+needs. Publishing or sharing an output requires the user's explicit destination
+and privacy choice; connecting an account does not make its videos public.
 
 ## Clients
 
@@ -20,18 +55,33 @@ API/MCP access requires a VoiceCheap plan with API access. Media generation uses
 
 Marketplace approval and indexing are managed by each platform. The presence of these files does not establish approval or completed client testing.
 
-## What is included
-
-Configuration, documentation, the VoiceCheap workflow skill and branding. Requests go to VoiceCheap’s hosted API. There are no executable hooks or embedded credentials. Generated result URLs may point to storage locations returned by the service. No additional telemetry is introduced by this repository.
-
 ## Links
 
 - [VoiceCheap](https://www.voicecheap.ai/en)
-- [MCP guide](https://www.voicecheap.ai/docs/ai/model-context-protocol)
-- [Documentation and support](https://www.voicecheap.ai/docs/introduction)
-- [Privacy](https://www.voicecheap.ai/en/privacy)
-- [Terms](https://www.voicecheap.ai/en/terms)
-- [Manage or revoke connections](https://app.voicecheap.ai/page-api)
+- [MCP connection guide](https://www.voicecheap.ai/docs/ai/model-context-protocol)
+- [Documentation and Support link](https://www.voicecheap.ai/docs/introduction)
+- [Privacy policy](https://www.voicecheap.ai/en/privacy)
+- [Terms of service](https://www.voicecheap.ai/en/terms)
+
+Manage and revoke connections from
+[VoiceCheap Integrations](https://app.voicecheap.ai/page-api).
+
+## What is packaged
+
+Client configuration, a workflow skill, documentation and existing VoiceCheap
+branding. There are no local executable hooks, backend source files or embedded
+credentials. Requests go to VoiceCheap's hosted service; generated result URLs
+may point to the storage locations returned by that service. No additional
+telemetry is introduced by this package.
+
+The icon is the existing 512-pixel VoiceCheap landing icon, converted from its
+actual JPEG encoding to PNG without changing the design. The official public wrapper is
+[VoiceCheap/voicecheap-mcp](https://github.com/VoiceCheap/voicecheap-mcp). Its client
+configuration, skills and documentation use the included MIT license. No trademark
+rights to the VoiceCheap name or logo are granted. Marketplace approval is separate
+from publication of this repository.
+
+The separate ClawHub skill release uses that platform's required MIT-0 license.
 
 Published by VOICECHEAP, SAS, France.
 
