@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.VoiceCheap/voicecheap",
+  "title": "VoiceCheap",
+  "description": "Manage VoiceCheap video translation, dubbing, transcripts, subtitles and speech with your account.",
+  "version": "0.1.0",
+  "websiteUrl": "https://www.voicecheap.ai/docs/ai/model-context-protocol",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.voicecheap.ai/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/VoiceCheap/voicecheap-mcp",
+    "source": "github"
+  }
+}

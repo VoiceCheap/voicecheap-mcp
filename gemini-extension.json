@@ -1,0 +1,11 @@
+{
+  "name": "voicecheap",
+  "version": "0.1.0",
+  "description": "Manage VoiceCheap dubbing projects, subtitles and speech from Gemini CLI.",
+  "mcpServers": {
+    "voicecheap": {
+      "httpUrl": "https://api.voicecheap.ai/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

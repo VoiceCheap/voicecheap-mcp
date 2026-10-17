@@ -1,0 +1,5 @@
+*.tar.gz
+mcp-publisher
+.mcpregistry*
+.env*
+.DS_Store

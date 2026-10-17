@@ -1,0 +1,17 @@
+{
+  "name": "voicecheap",
+  "version": "0.1.0",
+  "description": "Manage VoiceCheap dubbing projects, subtitles and speech from your agent.",
+  "homepage": "https://www.voicecheap.ai/docs/ai/model-context-protocol",
+  "keywords": [
+    "voicecheap",
+    "voicecheap dubbing",
+    "voicecheap subtitles"
+  ],
+  "mcpServers": "./.mcp.json",
+  "author": {
+    "name": "VOICECHEAP"
+  },
+  "repository": "https://github.com/VoiceCheap/voicecheap-mcp",
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "voicecheap": {
+      "url": "https://api.voicecheap.ai/mcp"
+    }
+  }
+}
